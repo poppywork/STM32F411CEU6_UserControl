@@ -1360,6 +1360,30 @@ USER/Module/IIC/Hardware_IIC/Hardware_i2c1.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32F411CEU6.elf.dir\build.make CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Hardware_IIC/Hardware_i2c1.c.s
 .PHONY : USER/Module/IIC/Hardware_IIC/Hardware_i2c1.c.s
 
+USER/Module/IIC/Virtual_IIC/iic1.obj: USER/Module/IIC/Virtual_IIC/iic1.c.obj
+.PHONY : USER/Module/IIC/Virtual_IIC/iic1.obj
+
+# target to build an object file
+USER/Module/IIC/Virtual_IIC/iic1.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32F411CEU6.elf.dir\build.make CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic1.c.obj
+.PHONY : USER/Module/IIC/Virtual_IIC/iic1.c.obj
+
+USER/Module/IIC/Virtual_IIC/iic1.i: USER/Module/IIC/Virtual_IIC/iic1.c.i
+.PHONY : USER/Module/IIC/Virtual_IIC/iic1.i
+
+# target to preprocess a source file
+USER/Module/IIC/Virtual_IIC/iic1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32F411CEU6.elf.dir\build.make CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic1.c.i
+.PHONY : USER/Module/IIC/Virtual_IIC/iic1.c.i
+
+USER/Module/IIC/Virtual_IIC/iic1.s: USER/Module/IIC/Virtual_IIC/iic1.c.s
+.PHONY : USER/Module/IIC/Virtual_IIC/iic1.s
+
+# target to generate assembly for a file
+USER/Module/IIC/Virtual_IIC/iic1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32F411CEU6.elf.dir\build.make CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic1.c.s
+.PHONY : USER/Module/IIC/Virtual_IIC/iic1.c.s
+
 USER/Module/IIC/Virtual_IIC/iic2.obj: USER/Module/IIC/Virtual_IIC/iic2.c.obj
 .PHONY : USER/Module/IIC/Virtual_IIC/iic2.obj
 
@@ -1431,30 +1455,6 @@ USER/Module/IIC/Virtual_IIC/iic4.s: USER/Module/IIC/Virtual_IIC/iic4.c.s
 USER/Module/IIC/Virtual_IIC/iic4.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32F411CEU6.elf.dir\build.make CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic4.c.s
 .PHONY : USER/Module/IIC/Virtual_IIC/iic4.c.s
-
-USER/Module/IIC/Virtual_IIC/iic7.obj: USER/Module/IIC/Virtual_IIC/iic7.c.obj
-.PHONY : USER/Module/IIC/Virtual_IIC/iic7.obj
-
-# target to build an object file
-USER/Module/IIC/Virtual_IIC/iic7.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32F411CEU6.elf.dir\build.make CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic7.c.obj
-.PHONY : USER/Module/IIC/Virtual_IIC/iic7.c.obj
-
-USER/Module/IIC/Virtual_IIC/iic7.i: USER/Module/IIC/Virtual_IIC/iic7.c.i
-.PHONY : USER/Module/IIC/Virtual_IIC/iic7.i
-
-# target to preprocess a source file
-USER/Module/IIC/Virtual_IIC/iic7.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32F411CEU6.elf.dir\build.make CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic7.c.i
-.PHONY : USER/Module/IIC/Virtual_IIC/iic7.c.i
-
-USER/Module/IIC/Virtual_IIC/iic7.s: USER/Module/IIC/Virtual_IIC/iic7.c.s
-.PHONY : USER/Module/IIC/Virtual_IIC/iic7.s
-
-# target to generate assembly for a file
-USER/Module/IIC/Virtual_IIC/iic7.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\STM32F411CEU6.elf.dir\build.make CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic7.c.s
-.PHONY : USER/Module/IIC/Virtual_IIC/iic7.c.s
 
 USER/Module/TIM_Delay/tim_delay.obj: USER/Module/TIM_Delay/tim_delay.c.obj
 .PHONY : USER/Module/TIM_Delay/tim_delay.obj
@@ -1739,6 +1739,9 @@ help:
 	@echo ... USER/Module/IIC/Hardware_IIC/Hardware_i2c1.obj
 	@echo ... USER/Module/IIC/Hardware_IIC/Hardware_i2c1.i
 	@echo ... USER/Module/IIC/Hardware_IIC/Hardware_i2c1.s
+	@echo ... USER/Module/IIC/Virtual_IIC/iic1.obj
+	@echo ... USER/Module/IIC/Virtual_IIC/iic1.i
+	@echo ... USER/Module/IIC/Virtual_IIC/iic1.s
 	@echo ... USER/Module/IIC/Virtual_IIC/iic2.obj
 	@echo ... USER/Module/IIC/Virtual_IIC/iic2.i
 	@echo ... USER/Module/IIC/Virtual_IIC/iic2.s
@@ -1748,9 +1751,6 @@ help:
 	@echo ... USER/Module/IIC/Virtual_IIC/iic4.obj
 	@echo ... USER/Module/IIC/Virtual_IIC/iic4.i
 	@echo ... USER/Module/IIC/Virtual_IIC/iic4.s
-	@echo ... USER/Module/IIC/Virtual_IIC/iic7.obj
-	@echo ... USER/Module/IIC/Virtual_IIC/iic7.i
-	@echo ... USER/Module/IIC/Virtual_IIC/iic7.s
 	@echo ... USER/Module/TIM_Delay/tim_delay.obj
 	@echo ... USER/Module/TIM_Delay/tim_delay.i
 	@echo ... USER/Module/TIM_Delay/tim_delay.s

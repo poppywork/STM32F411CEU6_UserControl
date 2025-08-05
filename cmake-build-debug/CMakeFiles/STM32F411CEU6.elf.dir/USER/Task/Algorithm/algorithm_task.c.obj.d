@@ -76,23 +76,23 @@ CMakeFiles/STM32F411CEU6.elf.dir/USER/Task/Algorithm/algorithm_task.c.obj: \
  D:\GitHub_Project\STM32F411CEU6_UserControl\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_tim_ex.h \
  D:\GitHub_Project\STM32F411CEU6_UserControl\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_uart.h \
  D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Algorithm\Filter/filter.h \
- I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/math.h \
  D:\GitHub_Project\STM32F411CEU6_UserControl\Middlewares\ST\ARM\DSP\Inc/arm_math.h \
  D:\GitHub_Project\STM32F411CEU6_UserControl\Drivers\CMSIS\Include/cmsis_compiler.h \
  I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/string.h \
  I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/sys/_locale.h \
  I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/strings.h \
  I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/sys/string.h \
+ I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/math.h \
  I:/ARM-GN~1.3/133167~1.3RE/lib/gcc/arm-none-eabi/13.3.1/include/float.h \
  I:/ARM-GN~1.3/133167~1.3RE/lib/gcc/arm-none-eabi/13.3.1/include/limits.h \
  I:/ARM-GN~1.3/133167~1.3RE/lib/gcc/arm-none-eabi/13.3.1/include/syslimits.h \
  I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/limits.h \
  I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/sys/syslimits.h \
- D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Module\IIC\Hardware_IIC/Hardware_i2c1.h \
- D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Module\IIC\Virtual_IIC/iic7.h \
+ D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Module\IIC\Virtual_IIC/iic1.h \
  D:\GitHub_Project\STM32F411CEU6_UserControl\Drivers\CMSIS\Device\ST\STM32F4xx\Include/stm32f411xe.h \
- D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Module\IIC\Virtual_IIC/iic.h \
- D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Module\IIC\Virtual_IIC/iic2.h \
  D:\GitHub_Project\STM32F411CEU6_UserControl\Core\Inc/main.h \
+ D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Module\IIC\Hardware_IIC/Hardware_i2c1.h \
+ D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Task\USART/usart_task.h \
+ D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Module\IIC\Virtual_IIC/iic2.h \
  D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Module\IIC\Virtual_IIC/iic3.h \
  D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Module\IIC\Virtual_IIC/iic4.h

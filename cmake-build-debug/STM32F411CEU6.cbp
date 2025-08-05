@@ -629,6 +629,12 @@
 		<Unit filename="D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic.h">
 			<Option target="STM32F411CEU6.elf"/>
 		</Unit>
+		<Unit filename="D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic1.c">
+			<Option target="STM32F411CEU6.elf"/>
+		</Unit>
+		<Unit filename="D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic1.h">
+			<Option target="STM32F411CEU6.elf"/>
+		</Unit>
 		<Unit filename="D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic2.c">
 			<Option target="STM32F411CEU6.elf"/>
 		</Unit>
@@ -645,12 +651,6 @@
 			<Option target="STM32F411CEU6.elf"/>
 		</Unit>
 		<Unit filename="D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic4.h">
-			<Option target="STM32F411CEU6.elf"/>
-		</Unit>
-		<Unit filename="D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic7.c">
-			<Option target="STM32F411CEU6.elf"/>
-		</Unit>
-		<Unit filename="D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic7.h">
 			<Option target="STM32F411CEU6.elf"/>
 		</Unit>
 		<Unit filename="D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/TIM_Delay/tim_delay.c">

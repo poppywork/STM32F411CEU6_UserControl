@@ -1855,29 +1855,7 @@ CMakeFiles/STM32F411CEU6.elf.dir/USER/Algorithm/Crc8_Crc16/crc8_crc16.c.obj: D:/
   I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
 
 CMakeFiles/STM32F411CEU6.elf.dir/USER/Algorithm/Filter/filter.c.obj: D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Algorithm/Filter/filter.c \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Algorithm/Filter/filter.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Hardware_IIC/Hardware_i2c1.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/_ansi.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/_newlib_version.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/machine/_default_types.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/machine/_types.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/machine/ieeefp.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/math.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/newlib.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/stdint.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/stdio.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/_intsup.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/_stdint.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/_types.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/cdefs.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/config.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/features.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/lock.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/reent.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/stdio.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdarg.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
+  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Algorithm/Filter/filter.h
 
 CMakeFiles/STM32F411CEU6.elf.dir/USER/Algorithm/KalmanFilterOne/KalmanFilterOne.c.obj: D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Algorithm/KalmanFilterOne/KalmanFilterOne.c \
   D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Algorithm/KalmanFilterOne/KalmanFilterOne.h \
@@ -2018,6 +1996,7 @@ CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Hardware_IIC/Hardware_i2c1.c.ob
   D:/GitHub_Project/STM32F411CEU6_UserControl/Middlewares/ST/ARM/DSP/Inc/arm_math.h \
   D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Hardware_IIC/Hardware_i2c1.h \
   D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/TIM_Delay/tim_delay.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Task/USART/usart_task.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/_ansi.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/_newlib_version.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/limits.h \
@@ -2042,9 +2021,59 @@ CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Hardware_IIC/Hardware_i2c1.c.ob
   I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/syslimits.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/float.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/limits.h \
+  I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdbool.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/syslimits.h
+
+CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic1.c.obj: D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic1.c \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Core/Inc/main.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Core/Inc/stm32f4xx_hal_conf.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/CMSIS/Include/cmsis_compiler.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/CMSIS/Include/cmsis_gcc.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/CMSIS/Include/cmsis_version.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/CMSIS/Include/core_cm4.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/CMSIS/Include/mpu_armv7.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Hardware_IIC/Hardware_i2c1.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic1.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/TIM_Delay/tim_delay.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Task/USART/usart_task.h \
+  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/_newlib_version.h \
+  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/machine/_default_types.h \
+  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/stdint.h \
+  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/_intsup.h \
+  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/_stdint.h \
+  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/features.h \
+  I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdbool.h \
+  I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
+  I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
 
 CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic2.c.obj: D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic2.c \
   D:/GitHub_Project/STM32F411CEU6_UserControl/Core/Inc/main.h \
@@ -2081,28 +2110,17 @@ CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic2.c.obj: D:/GitH
   D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
   D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Hardware_IIC/Hardware_i2c1.h \
   D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic2.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic3.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic4.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/_ansi.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/TIM_Delay/tim_delay.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Task/USART/usart_task.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/_newlib_version.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/machine/_default_types.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/machine/_types.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/machine/ieeefp.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/newlib.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/stdint.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/stdio.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/_intsup.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/_stdint.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/_types.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/cdefs.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/config.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/features.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/lock.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/reent.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/stdio.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdarg.h \
+  I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdbool.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
 
@@ -2141,29 +2159,17 @@ CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic3.c.obj: D:/GitH
   D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
   D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic2.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Hardware_IIC/Hardware_i2c1.h \
   D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic3.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic4.h \
   D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/TIM_Delay/tim_delay.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/_ansi.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Task/USART/usart_task.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/_newlib_version.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/machine/_default_types.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/machine/_types.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/machine/ieeefp.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/newlib.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/stdint.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/stdio.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/_intsup.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/_stdint.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/_types.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/cdefs.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/config.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/features.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/lock.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/reent.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/stdio.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdarg.h \
+  I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdbool.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
 
@@ -2202,91 +2208,17 @@ CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic4.c.obj: D:/GitH
   D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
   D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
   D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic2.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic3.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Hardware_IIC/Hardware_i2c1.h \
   D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic4.h \
   D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/TIM_Delay/tim_delay.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/_ansi.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Task/USART/usart_task.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/_newlib_version.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/machine/_default_types.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/machine/_types.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/machine/ieeefp.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/newlib.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/stdint.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/stdio.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/_intsup.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/_stdint.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/_types.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/cdefs.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/config.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/features.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/lock.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/reent.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/stdio.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdarg.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
-
-CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic7.c.obj: D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic7.c \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Core/Inc/main.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Core/Inc/stm32f4xx_hal_conf.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/CMSIS/Include/cmsis_compiler.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/CMSIS/Include/cmsis_gcc.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/CMSIS/Include/cmsis_version.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/CMSIS/Include/core_cm4.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/CMSIS/Include/mpu_armv7.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic2.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic3.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic4.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic7.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/TIM_Delay/tim_delay.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/_ansi.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/_newlib_version.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/machine/_default_types.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/machine/_types.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/machine/ieeefp.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/newlib.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/stdint.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/stdio.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/_intsup.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/_stdint.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/_types.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/cdefs.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/config.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/features.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/lock.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/reent.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/sys/stdio.h \
-  I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdarg.h \
+  I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdbool.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h
 
@@ -2403,12 +2335,12 @@ CMakeFiles/STM32F411CEU6.elf.dir/USER/Task/Algorithm/algorithm_task.c.obj: D:/Gi
   D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Algorithm/KalmanFilterOne/KalmanFilterOne.h \
   D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/Dwt/drv_dwt.h \
   D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Hardware_IIC/Hardware_i2c1.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic1.h \
   D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic2.h \
   D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic3.h \
   D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic4.h \
-  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic7.h \
   D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Task/Algorithm/algorithm_task.h \
+  D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Task/USART/usart_task.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/_ansi.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/_newlib_version.h \
   I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/limits.h \
@@ -2984,10 +2916,6 @@ D:/GitHub_Project/STM32F411CEU6_UserControl/Middlewares/Third_Party/FreeRTOS/Sou
 
 D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Algorithm/Crc8_Crc16/crc8_crc16.h:
 
-D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Hardware_IIC/Hardware_i2c1.h:
-
-I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/math.h:
-
 D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Algorithm/KalmanFilterOne/KalmanFilterOne.c:
 
 D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Algorithm/KalmanFilterOne/KalmanFilterOne.h:
@@ -3004,38 +2932,40 @@ D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Hardware_IIC/Hardwar
 
 D:/GitHub_Project/STM32F411CEU6_UserControl/Middlewares/ST/ARM/DSP/Inc/arm_math.h:
 
+D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Hardware_IIC/Hardware_i2c1.h:
+
 D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/TIM_Delay/tim_delay.h:
+
+D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Task/USART/usart_task.h:
+
+I:/arm-gnu-gcc13.3/13.3\ rel1/arm-none-eabi/include/math.h:
 
 I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/float.h:
 
 I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/limits.h:
 
-D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic2.c:
+I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdbool.h:
 
-D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic.h:
+D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic1.c:
+
+D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic1.h:
+
+D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic2.c:
 
 D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic2.h:
 
-D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic3.h:
-
-D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic4.h:
-
 D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic3.c:
+
+D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic3.h:
 
 D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic4.c:
 
-D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic7.c:
-
-D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic7.h:
+D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic4.h:
 
 D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/TIM_Delay/tim_delay.c:
 
 D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Task/Algorithm/algorithm_task.h:
 
-I:/arm-gnu-gcc13.3/13.3\ rel1/lib/gcc/arm-none-eabi/13.3.1/include/stdbool.h:
-
 D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Task/Robot_Config/robot.c:
-
-D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Task/USART/usart_task.h:
 
 D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Task/USART/usart_task.c:

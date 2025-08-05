@@ -2,29 +2,12 @@
 // Created by SuperChen on 2025/1/8.
 //
 
-#ifndef ENGINEERING_USER_CONTROL_IIC2_H
-#define ENGINEERING_USER_CONTROL_IIC2_H
+#ifndef ENGINEERING_USER_CONTROL_IIC3_H
+#define ENGINEERING_USER_CONTROL_IIC3_H
 
-
-/***********************************************************************************************************************************
- ***********************************************************************************************************************************
- **【文件名称】  i2c_moni.h
- **【功能描述】  模拟IIC时序
- **              定义引脚、定义全局结构体、声明全局函数
- **
- **【适用平台】  STM32F103 + 标准库v3.5 + keil5
- **
- **【移植说明】  引脚修改：在i2c_moni.h文件中修改，以方便IIC总线复用、代码复用
- **              器件地址：在各设备文件中修改
- **
- **【更新记录】  2020-03-05  创建
- **              2021-05-03  完善文件格式、注释格式
- **
-***********************************************************************************************************************************/
 #include <stm32f411xe.h>
-#include <stdio.h>
 #include "main.h"
-#include "iic.h"
+#include "Hardware_i2c1.h"
 
 // SCL
 #define I2C_MONI_SCL_GPIO2      IIC_SCL2_GPIO_Port
@@ -34,8 +17,13 @@
 #define I2C_MONI_SDA_PIN2       IIC_SDA2_Pin
 
 
-int16_t getRawAngle2(void);
+void IICSoft_Init_2(void);
+uint8_t detect_magnet_2(void);
+uint16_t get_raw_angle_2(void); // 不可以修改的恒定角度
 
+void AS5600_Init_2(AS5600_Encoder_t *encoder);
+uint16_t get_angle_2(void); // 可以修改的角度
+void AS5600_Set_TempZeroByReg_2(AS5600_Encoder_t *encoder, uint16_t new_zero_raw);  // 设定零点
+void AS5600_Update_2(AS5600_Encoder_t *encoder);
 
-
-#endif //ENGINEERING_USER_CONTROL_IIC2_H
+#endif //ENGINEERING_USER_CONTROL_IIC3_H

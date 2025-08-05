@@ -2,14 +2,15 @@
 // Created by SuperChen on 2025/1/8.
 //
 
-#include "iic3.h"
+#include "iic1.h"
 #include "tim_delay.h"
 
-#define SCL_L      (I2C_MONI_SCL_GPIO3->BSRR = (I2C_MONI_SCL_PIN3 << 16))
-#define SCL_H      (I2C_MONI_SCL_GPIO3->BSRR =  I2C_MONI_SCL_PIN3)
-#define SDA_L      (I2C_MONI_SDA_GPIO3->BSRR = (I2C_MONI_SDA_PIN3 << 16))
-#define SDA_H      (I2C_MONI_SDA_GPIO3->BSRR =  I2C_MONI_SDA_PIN3)
-#define SDA_READ   ((I2C_MONI_SDA_GPIO3->IDR & I2C_MONI_SDA_PIN3)?1:0)       // 不用改成输入模式就能读
+#define SCL_L      (I2C_MONI_SCL_GPIO1->BSRR = (I2C_MONI_SCL_PIN1 << 16))
+#define SCL_H      (I2C_MONI_SCL_GPIO1->BSRR =  I2C_MONI_SCL_PIN1)
+#define SDA_L      (I2C_MONI_SDA_GPIO1->BSRR = (I2C_MONI_SDA_PIN1 << 16))
+#define SDA_H      (I2C_MONI_SDA_GPIO1->BSRR =  I2C_MONI_SDA_PIN1)
+#define SDA_READ   ((I2C_MONI_SDA_GPIO1->IDR & I2C_MONI_SDA_PIN1)?1:0)       // 不用改成输入模式就能读
+
 
 static void     isBusy (void);          // 检测总线是否空闲
 static void     start  (void);          // 起始信号
@@ -21,7 +22,7 @@ static uint8_t  waitForAck(void);       // 等待应答信号
 static void     sendByte(uint8_t data);      // 发送一个字节
 static uint8_t  readByte(uint8_t ack);       // 读取一个字节
 
-void IICSoft_Init_3(void)
+void IICSoft_Init_1(void)
 {
     // CubeMax完成初始化
     delayUs(2);
@@ -46,18 +47,20 @@ static void isBusy(void)
         SCL_H ;
         delayUs(1);
     }
-    if(i==0)    USART1_DebugPrintf("\r\n SOFT_IIC_2: 总线超时错误!! \r\n");   // 错误提示
+
+    if(i==0)    USART1_DebugPrintf("\r\n SOFT_IIC_1: 总线超时错误!! \r\n");   // 错误提示
 }
 
 static void start(void)
 {
     isBusy ();               // 判断总线是否处于空闲状态
 
-    SCL_L;   delayUs(1);
-    SDA_H;   delayUs(1);
+    SCL_L;   delayUs(1);  // 不论一开始是什么信号都拉低
 
+    SDA_H;   delayUs(1);  // 拉高
     SCL_H;   delayUs(1);
     SDA_L;   delayUs(1);     // 在SCL高电平其间， SDA由高向低 跳变
+
     SCL_L;   delayUs(1);     // 将SCL拉低,钳住SCL线,准备发送数据
 }
 
@@ -278,15 +281,15 @@ static uint8_t IICSoft_WriteBuffer(uint8_t slave, uint8_t addr, uint8_t *buf, ui
 }
 
 /*******************************************************
- * 函数: detect_magnet_3
+ * 函数: detect_magnet_1
  * 输入: 无
  * 输出: 1表示检测到磁铁，0表示未检测到
  * 描述: 读取状态寄存器并检查MH位（磁铁检测位）
  ******************************************************/
 // 用于记录该函数的调用次数
-int detect_mag_3 = 0;
+int detect_mag_1 = 0;
 
-uint8_t detect_magnet_3(void)
+uint8_t detect_magnet_1(void)
 {
     uint8_t magStatus;       // 存储状态寄存器的值
     uint8_t retVal = 0;      // 函数返回值，默认0（未检测到磁铁）
@@ -301,7 +304,7 @@ uint8_t detect_magnet_3(void)
     IICSoft_ReadByte(_ams5600_Address, _stat, &magStatus);
 
     // 每次调用该函数，计数器自增（可用于统计检测次数或调试）
-    detect_mag_3++;
+    detect_mag_1++;
 
     // 检查状态寄存器的第5位（MH位，对应0x20）是否为1
     // 0x20 = 00100000（二进制），与运算可提取该位
@@ -312,12 +315,12 @@ uint8_t detect_magnet_3(void)
 }
 
 /*******************************************************
- * 函数: get_raw_angle_3
+ * 函数: get_raw_angle_1
  * 输入: 无
  * 输出: 原始角度寄存器的值
  * 描述: 获取磁铁位置的原始值，不受起始/结束角度或最大角度设置影响
  ******************************************************/
-uint16_t get_raw_angle_3(void)
+uint16_t get_raw_angle_1(void)
 {
     uint16_t getRaw = 0;               // 存储组合后的原始角度值
     uint8_t Raw[2] = {0, 0};      // 存储读取到的两个字节（高8位和低8位）
@@ -333,9 +336,8 @@ uint16_t get_raw_angle_3(void)
     return getRaw;
 }
 
-
-void AS5600_Init_3(AS5600_Encoder_t *encoder) {
-    IICSoft_Init_3();
+void AS5600_Init_1(AS5600_Encoder_t *encoder) {
+    IICSoft_Init_1();
 
     encoder->first_raw_angle = 0;
     encoder->raw_angle = 0;
@@ -349,8 +351,8 @@ void AS5600_Init_3(AS5600_Encoder_t *encoder) {
     encoder->is_initialized = false;
 
     // 读取首次角度（需确保磁铁已检测，参考detect_magnet_1函数）
-    if (detect_magnet_3()) {
-        encoder->first_raw_angle = get_raw_angle_3();
+    if (detect_magnet_1()) {
+        encoder->first_raw_angle = get_raw_angle_1();
         encoder->raw_angle = encoder->first_raw_angle;
 
 
@@ -363,8 +365,8 @@ void AS5600_Init_3(AS5600_Encoder_t *encoder) {
  * @param encoder AS5600结构体指针
  * @param new_zero_raw 新零点对应的原始角度（0~4095，12位）
  */
-void AS5600_Set_TempZeroByReg_3(AS5600_Encoder_t *encoder, uint16_t new_zero_raw) {
-    if (!encoder->is_initialized || !detect_magnet_3()) {
+void AS5600_Set_TempZeroByReg_1(AS5600_Encoder_t *encoder, uint16_t new_zero_raw) {
+    if (!encoder->is_initialized || !detect_magnet_1()) {
         return; // 未初始化或无磁铁，退出
     }
 
@@ -392,7 +394,7 @@ void AS5600_Set_TempZeroByReg_3(AS5600_Encoder_t *encoder, uint16_t new_zero_raw
 }
 
 // 正确的角度读取函数（应读取ANGLE寄存器，受ZPOS影响）
-uint16_t get_angle_3(void) {
+uint16_t get_angle_1(void) {
     uint16_t angle = 0;
     uint8_t ang[2] = {0, 0};
     // 读取ANGLE寄存器（0x0E和0x0F）
@@ -401,17 +403,16 @@ uint16_t get_angle_3(void) {
     return angle;
 }
 
-
 /**
  * @brief 更新编码器角度并统计多圈角度
  * @param encoder AS5600结构体指针
  */
-void AS5600_Update_3(AS5600_Encoder_t *encoder) {
-    if (!encoder->is_initialized || !detect_magnet_3()) {
+void AS5600_Update_1(AS5600_Encoder_t *encoder) {
+    if (!encoder->is_initialized || !detect_magnet_1()) {
         return; // 未初始化或无磁铁，不更新
     }
 
-    encoder->angle = get_angle_3(); // 读当前原始角度
+    encoder->angle = get_angle_1(); // 读当前原始角度
     int16_t diff = (int16_t )(encoder->angle - encoder->last_angle); // 计算差值
 
     // 处理跳变：判断方向并修正角度差

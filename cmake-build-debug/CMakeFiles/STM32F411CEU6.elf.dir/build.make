@@ -795,10 +795,24 @@ CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Hardware_IIC/Hardware_i2c1.c.s:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Hardware_IIC/Hardware_i2c1.c.s"
 	I:\ARM-GN~1.3\133167~1.3RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Module\IIC\Hardware_IIC\Hardware_i2c1.c -o CMakeFiles\STM32F411CEU6.elf.dir\USER\Module\IIC\Hardware_IIC\Hardware_i2c1.c.s
 
+CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic1.c.obj: CMakeFiles/STM32F411CEU6.elf.dir/flags.make
+CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic1.c.obj: D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic1.c
+CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic1.c.obj: CMakeFiles/STM32F411CEU6.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\GitHub_Project\STM32F411CEU6_UserControl\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic1.c.obj"
+	I:\ARM-GN~1.3\133167~1.3RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic1.c.obj -MF CMakeFiles\STM32F411CEU6.elf.dir\USER\Module\IIC\Virtual_IIC\iic1.c.obj.d -o CMakeFiles\STM32F411CEU6.elf.dir\USER\Module\IIC\Virtual_IIC\iic1.c.obj -c D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Module\IIC\Virtual_IIC\iic1.c
+
+CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic1.c.i"
+	I:\ARM-GN~1.3\133167~1.3RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Module\IIC\Virtual_IIC\iic1.c > CMakeFiles\STM32F411CEU6.elf.dir\USER\Module\IIC\Virtual_IIC\iic1.c.i
+
+CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic1.c.s"
+	I:\ARM-GN~1.3\133167~1.3RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Module\IIC\Virtual_IIC\iic1.c -o CMakeFiles\STM32F411CEU6.elf.dir\USER\Module\IIC\Virtual_IIC\iic1.c.s
+
 CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic2.c.obj: CMakeFiles/STM32F411CEU6.elf.dir/flags.make
 CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic2.c.obj: D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic2.c
 CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic2.c.obj: CMakeFiles/STM32F411CEU6.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\GitHub_Project\STM32F411CEU6_UserControl\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic2.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\GitHub_Project\STM32F411CEU6_UserControl\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic2.c.obj"
 	I:\ARM-GN~1.3\133167~1.3RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic2.c.obj -MF CMakeFiles\STM32F411CEU6.elf.dir\USER\Module\IIC\Virtual_IIC\iic2.c.obj.d -o CMakeFiles\STM32F411CEU6.elf.dir\USER\Module\IIC\Virtual_IIC\iic2.c.obj -c D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Module\IIC\Virtual_IIC\iic2.c
 
 CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic2.c.i: cmake_force
@@ -812,7 +826,7 @@ CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic2.c.s: cmake_for
 CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic3.c.obj: CMakeFiles/STM32F411CEU6.elf.dir/flags.make
 CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic3.c.obj: D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic3.c
 CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic3.c.obj: CMakeFiles/STM32F411CEU6.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\GitHub_Project\STM32F411CEU6_UserControl\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic3.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\GitHub_Project\STM32F411CEU6_UserControl\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic3.c.obj"
 	I:\ARM-GN~1.3\133167~1.3RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic3.c.obj -MF CMakeFiles\STM32F411CEU6.elf.dir\USER\Module\IIC\Virtual_IIC\iic3.c.obj.d -o CMakeFiles\STM32F411CEU6.elf.dir\USER\Module\IIC\Virtual_IIC\iic3.c.obj -c D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Module\IIC\Virtual_IIC\iic3.c
 
 CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic3.c.i: cmake_force
@@ -826,7 +840,7 @@ CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic3.c.s: cmake_for
 CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic4.c.obj: CMakeFiles/STM32F411CEU6.elf.dir/flags.make
 CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic4.c.obj: D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic4.c
 CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic4.c.obj: CMakeFiles/STM32F411CEU6.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\GitHub_Project\STM32F411CEU6_UserControl\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic4.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\GitHub_Project\STM32F411CEU6_UserControl\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic4.c.obj"
 	I:\ARM-GN~1.3\133167~1.3RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic4.c.obj -MF CMakeFiles\STM32F411CEU6.elf.dir\USER\Module\IIC\Virtual_IIC\iic4.c.obj.d -o CMakeFiles\STM32F411CEU6.elf.dir\USER\Module\IIC\Virtual_IIC\iic4.c.obj -c D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Module\IIC\Virtual_IIC\iic4.c
 
 CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic4.c.i: cmake_force
@@ -836,20 +850,6 @@ CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic4.c.i: cmake_for
 CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic4.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic4.c.s"
 	I:\ARM-GN~1.3\133167~1.3RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Module\IIC\Virtual_IIC\iic4.c -o CMakeFiles\STM32F411CEU6.elf.dir\USER\Module\IIC\Virtual_IIC\iic4.c.s
-
-CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic7.c.obj: CMakeFiles/STM32F411CEU6.elf.dir/flags.make
-CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic7.c.obj: D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/IIC/Virtual_IIC/iic7.c
-CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic7.c.obj: CMakeFiles/STM32F411CEU6.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\GitHub_Project\STM32F411CEU6_UserControl\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic7.c.obj"
-	I:\ARM-GN~1.3\133167~1.3RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic7.c.obj -MF CMakeFiles\STM32F411CEU6.elf.dir\USER\Module\IIC\Virtual_IIC\iic7.c.obj.d -o CMakeFiles\STM32F411CEU6.elf.dir\USER\Module\IIC\Virtual_IIC\iic7.c.obj -c D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Module\IIC\Virtual_IIC\iic7.c
-
-CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic7.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic7.c.i"
-	I:\ARM-GN~1.3\133167~1.3RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Module\IIC\Virtual_IIC\iic7.c > CMakeFiles\STM32F411CEU6.elf.dir\USER\Module\IIC\Virtual_IIC\iic7.c.i
-
-CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic7.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic7.c.s"
-	I:\ARM-GN~1.3\133167~1.3RE\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Module\IIC\Virtual_IIC\iic7.c -o CMakeFiles\STM32F411CEU6.elf.dir\USER\Module\IIC\Virtual_IIC\iic7.c.s
 
 CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/TIM_Delay/tim_delay.c.obj: CMakeFiles/STM32F411CEU6.elf.dir/flags.make
 CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/TIM_Delay/tim_delay.c.obj: D:/GitHub_Project/STM32F411CEU6_UserControl/USER/Module/TIM_Delay/tim_delay.c
@@ -975,10 +975,10 @@ STM32F411CEU6_elf_OBJECTS = \
 "CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/Board_Device/Board_ADC_Voltage/adc_voltage.c.obj" \
 "CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/Dwt/drv_dwt.c.obj" \
 "CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Hardware_IIC/Hardware_i2c1.c.obj" \
+"CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic1.c.obj" \
 "CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic2.c.obj" \
 "CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic3.c.obj" \
 "CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic4.c.obj" \
-"CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic7.c.obj" \
 "CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/TIM_Delay/tim_delay.c.obj" \
 "CMakeFiles/STM32F411CEU6.elf.dir/USER/Task/Algorithm/algorithm_task.c.obj" \
 "CMakeFiles/STM32F411CEU6.elf.dir/USER/Task/Robot_Config/robot.c.obj" \
@@ -1040,10 +1040,10 @@ STM32F411CEU6.elf: CMakeFiles/STM32F411CEU6.elf.dir/USER/Algorithm/KalmanFilterO
 STM32F411CEU6.elf: CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/Board_Device/Board_ADC_Voltage/adc_voltage.c.obj
 STM32F411CEU6.elf: CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/Dwt/drv_dwt.c.obj
 STM32F411CEU6.elf: CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Hardware_IIC/Hardware_i2c1.c.obj
+STM32F411CEU6.elf: CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic1.c.obj
 STM32F411CEU6.elf: CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic2.c.obj
 STM32F411CEU6.elf: CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic3.c.obj
 STM32F411CEU6.elf: CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic4.c.obj
-STM32F411CEU6.elf: CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Virtual_IIC/iic7.c.obj
 STM32F411CEU6.elf: CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/TIM_Delay/tim_delay.c.obj
 STM32F411CEU6.elf: CMakeFiles/STM32F411CEU6.elf.dir/USER/Task/Algorithm/algorithm_task.c.obj
 STM32F411CEU6.elf: CMakeFiles/STM32F411CEU6.elf.dir/USER/Task/Robot_Config/robot.c.obj

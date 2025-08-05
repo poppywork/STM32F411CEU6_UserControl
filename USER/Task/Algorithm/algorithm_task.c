@@ -21,8 +21,11 @@
 #include "drv_dwt.h"
 #include "filter.h"
 #include "arm_math.h"
-#include "Hardware_i2c1.h"
-#include "iic7.h"
+
+#include "iic1.h"
+#include "iic2.h"
+#include "iic3.h"
+#include "iic4.h"
 
 /* -------------------------------- 线程间通讯Topics相关 ------------------------------- */
 //static struct chassis_cmd_msg chassis_cmd;
@@ -45,48 +48,74 @@ static float algorithm_task_delta = 0;    // 监测线程运行时间
 static float algorithm_task_start_dt = 0; // 监测线程开始时间
 /* -------------------------------- 调试监测线程相关 --------------------------------- */
 
+static AS5600_Encoder_t as5600_encoder_1 = {0};
+static AS5600_Encoder_t as5600_encoder_2 = {0};
+static AS5600_Encoder_t as5600_encoder_3 = {0};
+static AS5600_Encoder_t as5600_encoder_4 = {0};
+static AS5600_Encoder_t as5600_encoder_5 = {0};
+static AS5600_Encoder_t as5600_encoder_6 = {0};
+static AS5600_Encoder_t as5600_encoder_7 = {0};
 
-
-
-// 定义AS5600读取的角度值
-static float angles_encoder_temp[7] = {0}; // 全局共享数组
-static float angles_encoder_last[7] = {0.02f}; // 全局共享数组
-static float angles_encoder[7] = {0}; // 全局共享数组
-
-
-static int16_t raw_angle[7] = {0}; // 全局共享变量
-static int16_t raw_angle_last[7] = {0};
-static AngleFilter filters[7]; // 定义 6 个编码器对应的滤波器
-
-static uint8_t flag = 0; // 标志位，
+float angles_encoder[7] = {0};
 
 extern QueueHandle_t xQueue;      // 队列句柄
-
-#define ANGLE_ERROR_MIN 4.0f   // 角度判定值，小于4度则认为是无效数据
-#define ANGLE_ERROR_MAX 358.0f // 角度判定值，大于358度则认为是无效数据
-
 
 /* -------------------------------- 线程入口 ------------------------------- */
 void AlgorithmTask_Entry(void const * argument)
 {
 /* -------------------------------- 外设初始化段落 ------------------------------- */
-    // 初始化每个滤波器
-    for (int i = 0; i < 7; i++)
-    {
-        initAngleFilter(&filters[i]);
+    // 先读取十次原始值在进行初始化和0点校准
+    for(uint8_t i = 0; i < 10; i++){
+        get_raw_angle_1();
+        get_raw_angle_2();
+        get_raw_angle_3();
+        get_raw_angle_4();
+        get_raw_angle_5();
+        get_raw_angle_6();
+        get_raw_angle_7();
+        HAL_Delay(10); // 延时1s等待AS5600初始化完成
     }
 
-    for(uint8_t i = 0; i < 20; i++){
-        raw_angle_last[0] =getRawAngle2();
-        raw_angle_last[1] =getRawAngle3();
-        raw_angle_last[2] =getRawAngle4();
-        raw_angle_last[3] =Read_Encoder_Angle4();
-        raw_angle_last[4] =Read_Encoder_Angle5();
-        raw_angle_last[5] =Read_Encoder_Angle6();
-    //    raw_angle_last[6] =getRawAngle7();
-    }
-    flag = 1; // 标志位置位
+    // 初始化AS5600编码器并标定0点
+    AS5600_Init_1(&as5600_encoder_1);
+    HAL_Delay(10); // 延时1s等待AS5600初始化完成
+    AS5600_Set_TempZeroByReg_1(&as5600_encoder_1, as5600_encoder_1.first_raw_angle);
+    HAL_Delay(10); // 延时1s等待AS5600初始化完成
 
+    AS5600_Init_2(&as5600_encoder_2);
+    HAL_Delay(10); // 延时1s等待AS5600初始化完成
+    AS5600_Set_TempZeroByReg_2(&as5600_encoder_2, as5600_encoder_2.first_raw_angle);
+    HAL_Delay(10); // 延时1s等待AS5600初始化完成
+
+    AS5600_Init_3(&as5600_encoder_3);
+    HAL_Delay(10); // 延时1s等待AS5600初始化完成
+    AS5600_Set_TempZeroByReg_3(&as5600_encoder_3, as5600_encoder_3.first_raw_angle);
+    HAL_Delay(10); // 延时1s等待AS5600初始化完成
+
+    AS5600_Init_3(&as5600_encoder_3);
+    HAL_Delay(10); // 延时1s等待AS5600初始化完成
+    AS5600_Set_TempZeroByReg_3(&as5600_encoder_3, as5600_encoder_3.first_raw_angle);
+    HAL_Delay(10); // 延时1s等待AS5600初始化完成
+
+    AS5600_Init_4(&as5600_encoder_4);
+    HAL_Delay(10); // 延时1s等待AS5600初始化完成
+    AS5600_Set_TempZeroByReg_4(&as5600_encoder_4, as5600_encoder_4.first_raw_angle);
+    HAL_Delay(10); // 延时1s等待AS5600初始化完成
+
+    AS5600_Init_5(&as5600_encoder_5);
+    HAL_Delay(10); // 延时1s等待AS5600初始化完成
+    AS5600_Set_TempZeroByReg_5(&as5600_encoder_5, as5600_encoder_5.first_raw_angle);
+    HAL_Delay(10); // 延时1s等待AS5600初始化完成
+
+    AS5600_Init_6(&as5600_encoder_6);
+    HAL_Delay(10); // 延时1s等待AS5600初始化完成
+    AS5600_Set_TempZeroByReg_6(&as5600_encoder_6, as5600_encoder_6.first_raw_angle);
+    HAL_Delay(10); // 延时1s等待AS5600初始化完成
+
+    AS5600_Init_7(&as5600_encoder_7);
+    HAL_Delay(10); // 延时1s等待AS5600初始化完成
+    AS5600_Set_TempZeroByReg_7(&as5600_encoder_7, as5600_encoder_7.first_raw_angle);
+    HAL_Delay(10); // 延时1s等待AS5600初始化完成
 /* -------------------------------- 外设初始化段落 ------------------------------- */
 
 /* -------------------------------- 线程间Topics初始化 ------------------------------- */
@@ -109,80 +138,32 @@ void AlgorithmTask_Entry(void const * argument)
 /* -------------------------------- 线程订阅Topics信息 ------------------------------- */
 
 /* -------------------------------- 线程代码编写段落 ------------------------------- */
-        if(flag == 1) {
-            // 模拟获取编码器的原始角度值（实际中应替换为传感器接口）
-            if (raw_angle_last[0] > 0){
-                raw_angle[0] = getRawAngle2();
-                angles_encoder_temp[0] = processAngle(&filters[0], raw_angle[0]);// 处理编码器角度，获取滤波（去掉最小最大值，求平均值）后的角度值
-                raw_angle_last[0] = raw_angle[0];
-            }
 
-            if (raw_angle_last[1] > 0) {
-                raw_angle[1] = getRawAngle3();
-                angles_encoder_temp[1] = processAngle(&filters[1], raw_angle[1]);
-                raw_angle_last[1] = raw_angle[1];
-            }
+        AS5600_Update_1(&as5600_encoder_1);
+        AS5600_Update_2(&as5600_encoder_2);
+        AS5600_Update_3(&as5600_encoder_3);
+        AS5600_Update_4(&as5600_encoder_4);
+        AS5600_Update_5(&as5600_encoder_5);
+        AS5600_Update_6(&as5600_encoder_6);
+        AS5600_Update_7(&as5600_encoder_7);
 
-            if (raw_angle_last[2] > 0) {
-                raw_angle[2] = getRawAngle4();
-                angles_encoder_temp[2] = processAngle(&filters[2], raw_angle[2]);
-                raw_angle_last[2] = raw_angle[2];
-            }
+        angles_encoder[0] = as5600_encoder_1.total_angle_deg;
+        angles_encoder[1] = as5600_encoder_2.total_angle_deg;
+        angles_encoder[2] = as5600_encoder_3.total_angle_deg;
+        angles_encoder[3] = as5600_encoder_4.total_angle_deg;
+        angles_encoder[4] = as5600_encoder_5.total_angle_deg;
+        angles_encoder[5] = as5600_encoder_6.total_angle_deg;
+        angles_encoder[6] = as5600_encoder_7.total_angle_deg;
 
-            if (raw_angle_last[3] > 0) {
-                raw_angle[3] = Read_Encoder_Angle4();
-                angles_encoder_temp[3] = processAngle(&filters[3], raw_angle[3]);
-                raw_angle_last[3] = raw_angle[3];
-            }
+        // 将编码器数据放入队列
+        xQueueSend(xQueue, angles_encoder, 0);
 
-            if (raw_angle_last[4] > 0) {
-                raw_angle[4] = Read_Encoder_Angle5();
-                angles_encoder_temp[4] = processAngle(&filters[4], raw_angle[4]);
-                raw_angle_last[4] = raw_angle[4];
-            }
-
-            if (raw_angle_last[5] > 0) {
-                raw_angle[5] = Read_Encoder_Angle6();
-                angles_encoder_temp[5] = processAngle(&filters[5], raw_angle[5]);
-                raw_angle_last[5] = raw_angle[5];
-            }
-
-//            if (raw_angle_last[6] > 0) {
-//                raw_angle[6] = getRawAngle7();
-//                angles_encoder_temp[6] = processAngle(&filters[6], raw_angle[6]);
-//                raw_angle_last[6] = raw_angle[6];
-//            }
-
-            for (uint8_t i = 0; i < 6; i++)
-            {
-                // 判断数据有效性并处理
-                if (angles_encoder_temp[i] > 0.01f) {
-                    angles_encoder[i] = angles_encoder_temp[i]; // 保存为最后一个有效值
-                } else {
-//                    angles_encoder[0] = 180.0f;
-//                    angles_encoder[1] = 180.0f;
-//                    angles_encoder[2] = 180.0f;
-//                    angles_encoder[3] = 180.0f;
-//                    angles_encoder[4] = 180.0f;
-//                    angles_encoder[5] = 180.0f;
-//                    angles_encoder[6] = 180.0f;
-                }
-            }
-
-
-            // 将编码器数据放入队列
-            xQueueSend(xQueue, angles_encoder, 0);
-        }
-
-
-//printf("AlgorithmTask_Entry: algorithm_task_dt = %f\n", algorithm_task_dt);
-//printf("AlgorithmTask_Entry: algorithm_task_delta = %f\n", algorithm_task_delta);
 /* -------------------------------- 线程代码编写段落 ------------------------------- */
 
 /* -------------------------------- 线程发布Topics信息 ------------------------------- */
 //        chassis_pub_push();
 /* -------------------------------- 线程发布Topics信息 ------------------------------- */
-        vTaskDelay(6);
+        vTaskDelay(1);
     }
 }
 /* -------------------------------- 线程结束 ------------------------------- */

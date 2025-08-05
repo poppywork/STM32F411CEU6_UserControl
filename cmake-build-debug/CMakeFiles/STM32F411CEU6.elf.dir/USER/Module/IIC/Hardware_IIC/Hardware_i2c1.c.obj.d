@@ -1,5 +1,37 @@
 CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Hardware_IIC/Hardware_i2c1.c.obj: \
  D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Module\IIC\Hardware_IIC\Hardware_i2c1.c \
+ D:\GitHub_Project\STM32F411CEU6_UserControl\Middlewares\ST\ARM\DSP\Inc/arm_math.h \
+ D:\GitHub_Project\STM32F411CEU6_UserControl\Drivers\CMSIS\Include/cmsis_compiler.h \
+ I:/ARM-GN~1.3/133167~1.3RE/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h \
+ I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/stdint.h \
+ I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/machine/_default_types.h \
+ I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/sys/features.h \
+ I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/_newlib_version.h \
+ I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/sys/_intsup.h \
+ I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/sys/_stdint.h \
+ D:\GitHub_Project\STM32F411CEU6_UserControl\Drivers\CMSIS\Include/cmsis_gcc.h \
+ I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/string.h \
+ I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/_ansi.h \
+ I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/newlib.h \
+ I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/sys/config.h \
+ I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/machine/ieeefp.h \
+ I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/sys/reent.h \
+ I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/_ansi.h \
+ I:/ARM-GN~1.3/133167~1.3RE/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
+ I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/sys/cdefs.h \
+ I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/sys/_types.h \
+ I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/machine/_types.h \
+ I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/sys/lock.h \
+ I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/sys/_locale.h \
+ I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/strings.h \
+ I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/sys/string.h \
+ I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/math.h \
+ I:/ARM-GN~1.3/133167~1.3RE/lib/gcc/arm-none-eabi/13.3.1/include/float.h \
+ I:/ARM-GN~1.3/133167~1.3RE/lib/gcc/arm-none-eabi/13.3.1/include/limits.h \
+ I:/ARM-GN~1.3/133167~1.3RE/lib/gcc/arm-none-eabi/13.3.1/include/syslimits.h \
+ I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/limits.h \
+ I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/sys/syslimits.h \
+ D:\GitHub_Project\STM32F411CEU6_UserControl\Core\Inc/i2c.h \
  D:\GitHub_Project\STM32F411CEU6_UserControl\Core\Inc/main.h \
  D:\GitHub_Project\STM32F411CEU6_UserControl\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal.h \
  D:\GitHub_Project\STM32F411CEU6_UserControl\Core\Inc/stm32f4xx_hal_conf.h \
@@ -8,20 +40,11 @@ CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Hardware_IIC/Hardware_i2c1.c.ob
  D:\GitHub_Project\STM32F411CEU6_UserControl\Drivers\CMSIS\Device\ST\STM32F4xx\Include/stm32f4xx.h \
  D:\GitHub_Project\STM32F411CEU6_UserControl\Drivers\CMSIS\Device\ST\STM32F4xx\Include/stm32f411xe.h \
  D:\GitHub_Project\STM32F411CEU6_UserControl\Drivers\CMSIS\Include/core_cm4.h \
- I:/ARM-GN~1.3/133167~1.3RE/lib/gcc/arm-none-eabi/13.3.1/include/stdint.h \
- I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/stdint.h \
- I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/machine/_default_types.h \
- I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/sys/features.h \
- I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/_newlib_version.h \
- I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/sys/_intsup.h \
- I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/sys/_stdint.h \
  D:\GitHub_Project\STM32F411CEU6_UserControl\Drivers\CMSIS\Include/cmsis_version.h \
  D:\GitHub_Project\STM32F411CEU6_UserControl\Drivers\CMSIS\Include/cmsis_compiler.h \
- D:\GitHub_Project\STM32F411CEU6_UserControl\Drivers\CMSIS\Include/cmsis_gcc.h \
  D:\GitHub_Project\STM32F411CEU6_UserControl\Drivers\CMSIS\Include/mpu_armv7.h \
  D:\GitHub_Project\STM32F411CEU6_UserControl\Drivers\CMSIS\Device\ST\STM32F4xx\Include/system_stm32f4xx.h \
  D:\GitHub_Project\STM32F411CEU6_UserControl\Drivers\STM32F4xx_HAL_Driver\Inc/Legacy/stm32_hal_legacy.h \
- I:/ARM-GN~1.3/133167~1.3RE/lib/gcc/arm-none-eabi/13.3.1/include/stddef.h \
  D:\GitHub_Project\STM32F411CEU6_UserControl\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_rcc_ex.h \
  D:\GitHub_Project\STM32F411CEU6_UserControl\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_gpio.h \
  D:\GitHub_Project\STM32F411CEU6_UserControl\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_gpio_ex.h \
@@ -42,29 +65,7 @@ CMakeFiles/STM32F411CEU6.elf.dir/USER/Module/IIC/Hardware_IIC/Hardware_i2c1.c.ob
  D:\GitHub_Project\STM32F411CEU6_UserControl\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_tim.h \
  D:\GitHub_Project\STM32F411CEU6_UserControl\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_tim_ex.h \
  D:\GitHub_Project\STM32F411CEU6_UserControl\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_uart.h \
- D:\GitHub_Project\STM32F411CEU6_UserControl\Middlewares\ST\ARM\DSP\Inc/arm_math.h \
- D:\GitHub_Project\STM32F411CEU6_UserControl\Drivers\CMSIS\Include/cmsis_compiler.h \
- I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/string.h \
- I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/_ansi.h \
- I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/newlib.h \
- I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/sys/config.h \
- I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/machine/ieeefp.h \
- I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/sys/reent.h \
- I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/_ansi.h \
- I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/sys/cdefs.h \
- I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/sys/_types.h \
- I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/machine/_types.h \
- I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/sys/lock.h \
- I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/sys/_locale.h \
- I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/strings.h \
- I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/sys/string.h \
- I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/math.h \
- I:/ARM-GN~1.3/133167~1.3RE/lib/gcc/arm-none-eabi/13.3.1/include/float.h \
- I:/ARM-GN~1.3/133167~1.3RE/lib/gcc/arm-none-eabi/13.3.1/include/limits.h \
- I:/ARM-GN~1.3/133167~1.3RE/lib/gcc/arm-none-eabi/13.3.1/include/syslimits.h \
- I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/limits.h \
- I:/ARM-GN~1.3/133167~1.3RE/arm-none-eabi/include/sys/syslimits.h \
- D:\GitHub_Project\STM32F411CEU6_UserControl\Core\Inc/i2c.h \
- D:\GitHub_Project\STM32F411CEU6_UserControl\Core\Inc/main.h \
  D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Module\IIC\Hardware_IIC\Hardware_i2c1.h \
+ I:/ARM-GN~1.3/133167~1.3RE/lib/gcc/arm-none-eabi/13.3.1/include/stdbool.h \
+ D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Task\USART/usart_task.h \
  D:\GitHub_Project\STM32F411CEU6_UserControl\USER\Module\TIM_Delay/tim_delay.h

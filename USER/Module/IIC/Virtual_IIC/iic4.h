@@ -2,27 +2,12 @@
 // Created by SuperChen on 2025/1/8.
 //
 
-#ifndef ENGINEERING_USER_CONTROL_IIC4_H
-#define ENGINEERING_USER_CONTROL_IIC4_H
-/***********************************************************************************************************************************
- ***********************************************************************************************************************************
- **¡¾ÎÄ¼şÃû³Æ¡¿  i2c_moni.h
- **¡¾¹¦ÄÜÃèÊö¡¿  Ä£ÄâIICÊ±Ğò
- **              ¶¨ÒåÒı½Å¡¢¶¨ÒåÈ«¾Ö½á¹¹Ìå¡¢ÉùÃ÷È«¾Öº¯Êı
- **
- **¡¾ÊÊÓÃÆ½Ì¨¡¿  STM32F103 + ±ê×¼¿âv3.5 + keil5
- **
- **¡¾ÒÆÖ²ËµÃ÷¡¿  Òı½ÅĞŞ¸Ä£ºÔÚi2c_moni.hÎÄ¼şÖĞĞŞ¸Ä£¬ÒÔ·½±ãIIC×ÜÏß¸´ÓÃ¡¢´úÂë¸´ÓÃ
- **              Æ÷¼şµØÖ·£ºÔÚ¸÷Éè±¸ÎÄ¼şÖĞĞŞ¸Ä
- **
- **¡¾¸üĞÂ¼ÇÂ¼¡¿  2020-03-05  ´´½¨
- **              2021-05-03  ÍêÉÆÎÄ¼ş¸ñÊ½¡¢×¢ÊÍ¸ñÊ½
- **
-***********************************************************************************************************************************/
+#ifndef ENGINEERING_USER_CONTROL_IIC7_H
+#define ENGINEERING_USER_CONTROL_IIC7_H
+
 #include <stm32f411xe.h>
-#include <stdio.h>
 #include "main.h"
-#include "iic.h"
+#include "Hardware_i2c1.h"
 
 // SCL
 #define I2C_MONI_SCL_GPIO4      IIC_SCL4_GPIO_Port
@@ -31,8 +16,13 @@
 #define I2C_MONI_SDA_GPIO4      IIC_SDA4_GPIO_Port
 #define I2C_MONI_SDA_PIN4       IIC_SDA4_Pin
 
+void IICSoft_Init_4(void);
+uint8_t detect_magnet_4(void);
+uint16_t get_raw_angle_4(void);
 
-
-int16_t getRawAngle4(void);
+void AS5600_Init_4(AS5600_Encoder_t *encoder);
+uint16_t get_angle_4(void); // å¯ä»¥ä¿®æ”¹çš„è§’åº¦
+void AS5600_Set_TempZeroByReg_4(AS5600_Encoder_t *encoder, uint16_t new_zero_raw);  // è®¾å®šé›¶ç‚¹
+void AS5600_Update_4(AS5600_Encoder_t *encoder);
 
 #endif //ENGINEERING_USER_CONTROL_IIC4_H

@@ -52,6 +52,7 @@ static float angles[7] = {0.0f}; // 用于临时存储队列中读取的编码器值
 static float encoder_values[7] = {0, 0, 0, 0, 0, 0,0};              // 存储6个编码器值
 
 extern QueueHandle_t xQueue;    // FreeRTOS 队列句柄
+
 void PackData(float *values, uint16_t data_length, RobotArmController_t *tx_data)
 {
     static uint32_t frame_seq = 0; // 帧序号
@@ -153,8 +154,9 @@ void SendTask_Entry(void const * argument)
             // 将打包后的数据写入DMA缓冲区
             memcpy(dma_tx_buffer[current_buffer], &tx_data, FRAME_SIZE);
             // 启动 DMA 发送
-            //DMA_Send_Frame2(); // 发送数据帧
             DMA_Send_Frame();
+           // DMA_Send_Frame2(); // 发送数据帧
+
            // printf("Send Data\n");
         }
 
@@ -163,7 +165,7 @@ void SendTask_Entry(void const * argument)
 /* -------------------------------- 线程发布Topics信息 ------------------------------- */
 //        chassis_pub_push();
 /* -------------------------------- 线程发布Topics信息 ------------------------------- */
-        vTaskDelay(6);
+        vTaskDelay(1);
     }
 }
 /* -------------------------------- 线程结束 ------------------------------- */
