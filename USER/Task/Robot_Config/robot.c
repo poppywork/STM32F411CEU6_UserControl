@@ -13,7 +13,7 @@ uint8_t buf[1]={0};
 uint32_t count = 0;
 
 #define QUEUE_LENGTH 10
-#define QUEUE_ITEM_SIZE sizeof(float)*7
+#define QUEUE_ITEM_SIZE sizeof(float)*6
 
 void robot_init(void)
 {

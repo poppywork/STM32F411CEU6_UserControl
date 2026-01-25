@@ -48,8 +48,8 @@ static volatile uint8_t current_buffer = 0;           // 当前缓冲区索引
 uint8_t dma_busy = 0;        // DMA状态标志位
 uint8_t dma_busy2 = 0; // DMA状态标志位2（可选，视具体需求而定）
 
-static float angles[7] = {0.0f}; // 用于临时存储队列中读取的编码器值
-static float encoder_values[7] = {0, 0, 0, 0, 0, 0,0};              // 存储6个编码器值
+static float angles[6] = {0.0f}; // 用于临时存储队列中读取的编码器值
+static float encoder_values[6] = {0, 0, 0, 0, 0, 0};              // 存储6个编码器值
 
 extern QueueHandle_t xQueue;    // FreeRTOS 队列句柄
 
