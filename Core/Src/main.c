@@ -108,7 +108,7 @@ int main(void)
   MX_TIM5_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
-
+    HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,GPIO_PIN_SET);
     robot_init();
 
   /* USER CODE END 2 */

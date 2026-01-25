@@ -54,9 +54,8 @@ static AS5600_Encoder_t as5600_encoder_3 = {0};
 static AS5600_Encoder_t as5600_encoder_4 = {0};
 static AS5600_Encoder_t as5600_encoder_5 = {0};
 static AS5600_Encoder_t as5600_encoder_6 = {0};
-static AS5600_Encoder_t as5600_encoder_7 = {0};
 
-float angles_encoder[7] = {0};
+float angles_encoder[6] = {0};
 
 extern QueueHandle_t xQueue;      // 队列句柄
 
@@ -72,7 +71,6 @@ void AlgorithmTask_Entry(void const * argument)
         get_raw_angle_4();
         get_raw_angle_5();
         get_raw_angle_6();
-        get_raw_angle_7();
         HAL_Delay(10); // 延时1s等待AS5600初始化完成
     }
 
@@ -112,10 +110,7 @@ void AlgorithmTask_Entry(void const * argument)
     AS5600_Set_TempZeroByReg_6(&as5600_encoder_6, as5600_encoder_6.first_raw_angle);
     HAL_Delay(10); // 延时1s等待AS5600初始化完成
 
-    AS5600_Init_7(&as5600_encoder_7);
-    HAL_Delay(10); // 延时1s等待AS5600初始化完成
-    AS5600_Set_TempZeroByReg_7(&as5600_encoder_7, as5600_encoder_7.first_raw_angle);
-    HAL_Delay(10); // 延时1s等待AS5600初始化完成
+
 /* -------------------------------- 外设初始化段落 ------------------------------- */
 
 /* -------------------------------- 线程间Topics初始化 ------------------------------- */
@@ -145,7 +140,6 @@ void AlgorithmTask_Entry(void const * argument)
         AS5600_Update_4(&as5600_encoder_4);
         AS5600_Update_5(&as5600_encoder_5);
         AS5600_Update_6(&as5600_encoder_6);
-        AS5600_Update_7(&as5600_encoder_7);
 
         angles_encoder[0] = as5600_encoder_1.total_angle_deg;
         angles_encoder[1] = as5600_encoder_2.total_angle_deg;
@@ -153,7 +147,7 @@ void AlgorithmTask_Entry(void const * argument)
         angles_encoder[3] = as5600_encoder_4.total_angle_deg;
         angles_encoder[4] = as5600_encoder_5.total_angle_deg;
         angles_encoder[5] = as5600_encoder_6.total_angle_deg;
-        angles_encoder[6] = as5600_encoder_7.total_angle_deg;
+
 
         // 将编码器数据放入队列
         xQueueSend(xQueue, angles_encoder, 0);
