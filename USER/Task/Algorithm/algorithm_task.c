@@ -22,11 +22,13 @@
 #include "filter.h"
 #include "arm_math.h"
 
+#include "Hardware_i2c1.h"
+
 #include "iic1.h"
 #include "iic2.h"
 #include "iic3.h"
 #include "iic4.h"
-
+#include <stdlib.h>
 /* -------------------------------- 线程间通讯Topics相关 ------------------------------- */
 //static struct chassis_cmd_msg chassis_cmd;
 //static struct chassis_fdb_msg chassis_fdb;
@@ -48,12 +50,12 @@ static float algorithm_task_delta = 0;    // 监测线程运行时间
 static float algorithm_task_start_dt = 0; // 监测线程开始时间
 /* -------------------------------- 调试监测线程相关 --------------------------------- */
 
-static AS5600_Encoder_t as5600_encoder_1 = {0};
-static AS5600_Encoder_t as5600_encoder_2 = {0};
-static AS5600_Encoder_t as5600_encoder_3 = {0};
-static AS5600_Encoder_t as5600_encoder_4 = {0};
-static AS5600_Encoder_t as5600_encoder_5 = {0};
-static AS5600_Encoder_t as5600_encoder_6 = {0};
+static MT6701_Encoder_t mt6701_encoder_1 = {0};
+static MT6701_Encoder_t mt6701_encoder_2 = {0};
+static MT6701_Encoder_t mt6701_encoder_3 = {0};
+static MT6701_Encoder_t mt6701_encoder_4 = {0};
+static MT6701_Encoder_t mt6701_encoder_5 = {0};
+static MT6701_Encoder_t mt6701_encoder_6 = {0};
 
 float angles_encoder[6] = {0};
 
@@ -71,44 +73,42 @@ void AlgorithmTask_Entry(void const * argument)
         get_raw_angle_4();
         get_raw_angle_5();
         get_raw_angle_6();
-        HAL_Delay(10); // 延时1s等待AS5600初始化完成
+        HAL_Delay(10); // 延时1s等待MT6701初始化完成
     }
 
-    // 初始化AS5600编码器并标定0点
-    AS5600_Init_1(&as5600_encoder_1);
-    HAL_Delay(10); // 延时1s等待AS5600初始化完成
-    AS5600_Set_TempZeroByReg_1(&as5600_encoder_1, as5600_encoder_1.first_raw_angle);
-    HAL_Delay(10); // 延时1s等待AS5600初始化完成
+    // 初始化MT6701编码器并标定0点
+    MT6701_Init_1(&mt6701_encoder_1);
+    HAL_Delay(10); // 延时1s等待MT6701初始化完成
+    MT6701_SetZero_1(&mt6701_encoder_1
 
-    AS5600_Init_2(&as5600_encoder_2);
-    HAL_Delay(10); // 延时1s等待AS5600初始化完成
-    AS5600_Set_TempZeroByReg_2(&as5600_encoder_2, as5600_encoder_2.first_raw_angle);
-    HAL_Delay(10); // 延时1s等待AS5600初始化完成
+    );
+    HAL_Delay(10); // 延时1s等待MT6701初始化完成
 
-    AS5600_Init_3(&as5600_encoder_3);
-    HAL_Delay(10); // 延时1s等待AS5600初始化完成
-    AS5600_Set_TempZeroByReg_3(&as5600_encoder_3, as5600_encoder_3.first_raw_angle);
-    HAL_Delay(10); // 延时1s等待AS5600初始化完成
+    MT6701_Init_2(&mt6701_encoder_2);
+    HAL_Delay(10); // 延时1s等待MT6701初始化完成
+    MT6701_SetZero_2(&mt6701_encoder_2);
+    HAL_Delay(10); // 延时1s等待MT6701初始化完成
 
-    AS5600_Init_3(&as5600_encoder_3);
-    HAL_Delay(10); // 延时1s等待AS5600初始化完成
-    AS5600_Set_TempZeroByReg_3(&as5600_encoder_3, as5600_encoder_3.first_raw_angle);
-    HAL_Delay(10); // 延时1s等待AS5600初始化完成
+    MT6701_Init_3(&mt6701_encoder_3);
+    HAL_Delay(10); // 延时1s等待MT6701初始化完成
+    MT6701_SetZero_3(&mt6701_encoder_3);
+    HAL_Delay(10); // 延时1s等待MT6701初始化完成
 
-    AS5600_Init_4(&as5600_encoder_4);
-    HAL_Delay(10); // 延时1s等待AS5600初始化完成
-    AS5600_Set_TempZeroByReg_4(&as5600_encoder_4, as5600_encoder_4.first_raw_angle);
-    HAL_Delay(10); // 延时1s等待AS5600初始化完成
 
-    AS5600_Init_5(&as5600_encoder_5);
-    HAL_Delay(10); // 延时1s等待AS5600初始化完成
-    AS5600_Set_TempZeroByReg_5(&as5600_encoder_5, as5600_encoder_5.first_raw_angle);
-    HAL_Delay(10); // 延时1s等待AS5600初始化完成
+    MT6701_Init_4(&mt6701_encoder_4);
+    HAL_Delay(10); // 延时1s等待MT6701初始化完成
+    MT6701_SetZero_4(&mt6701_encoder_4);
+    HAL_Delay(10); // 延时1s等待MT6701初始化完成
 
-    AS5600_Init_6(&as5600_encoder_6);
-    HAL_Delay(10); // 延时1s等待AS5600初始化完成
-    AS5600_Set_TempZeroByReg_6(&as5600_encoder_6, as5600_encoder_6.first_raw_angle);
-    HAL_Delay(10); // 延时1s等待AS5600初始化完成
+    MT6701_Init_5(&mt6701_encoder_5);
+    HAL_Delay(10); // 延时1s等待MT6701初始化完成
+    MT6701_SetZero_5(&mt6701_encoder_5);
+    HAL_Delay(10); // 延时1s等待MT6701初始化完成
+
+    MT6701_Init_6(&mt6701_encoder_6);
+    HAL_Delay(10); // 延时1s等待MT6701初始化完成
+    MT6701_SetZero_6(&mt6701_encoder_6);
+    HAL_Delay(10); // 延时1s等待MT6701初始化完成
 
 
 /* -------------------------------- 外设初始化段落 ------------------------------- */
@@ -134,21 +134,31 @@ void AlgorithmTask_Entry(void const * argument)
 
 /* -------------------------------- 线程代码编写段落 ------------------------------- */
 
-        AS5600_Update_1(&as5600_encoder_1);
-        AS5600_Update_2(&as5600_encoder_2);
-        AS5600_Update_3(&as5600_encoder_3);
-        AS5600_Update_4(&as5600_encoder_4);
-        AS5600_Update_5(&as5600_encoder_5);
-        AS5600_Update_6(&as5600_encoder_6);
-
-        angles_encoder[0] = as5600_encoder_1.total_angle_deg;
-        angles_encoder[1] = as5600_encoder_2.total_angle_deg;
-        angles_encoder[2] = as5600_encoder_3.total_angle_deg;
-        angles_encoder[3] = as5600_encoder_4.total_angle_deg;
-        angles_encoder[4] = as5600_encoder_5.total_angle_deg;
-        angles_encoder[5] = as5600_encoder_6.total_angle_deg;
+        MT6701_Update_1(&mt6701_encoder_1);
+        MT6701_Update_2(&mt6701_encoder_2);
+        MT6701_Update_3(&mt6701_encoder_3);
+        MT6701_Update_4(&mt6701_encoder_4);
+        MT6701_Update_5(&mt6701_encoder_5);
+        MT6701_Update_6(&mt6701_encoder_6);
 
 
+        angles_encoder[0] = -mt6701_encoder_1.total_angle_deg;//与下位机方向电机转动方向相反
+        angles_encoder[1] = mt6701_encoder_2.total_angle_deg;
+        angles_encoder[2] = mt6701_encoder_3.total_angle_deg;
+        angles_encoder[3] = mt6701_encoder_4.total_angle_deg;
+        angles_encoder[4] = -mt6701_encoder_5.total_angle_deg;
+        angles_encoder[5] = -mt6701_encoder_6.total_angle_deg;
+
+        //判断当前状态是否稳定   50大约是1°
+        if (abs(mt6701_encoder_1.diff)<50 &&
+            abs(mt6701_encoder_2.diff)<50 &&
+            abs(mt6701_encoder_3.diff)<50 &&
+            abs(mt6701_encoder_4.diff)<50 &&
+            abs(mt6701_encoder_5.diff)<50 &&
+            abs(mt6701_encoder_6.diff)<50)
+        {
+            HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, GPIO_PIN_SET);
+        }
         // 将编码器数据放入队列
         xQueueSend(xQueue, angles_encoder, 0);
 

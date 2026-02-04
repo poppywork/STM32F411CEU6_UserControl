@@ -1,28 +1,19 @@
-"C:\Program Files\JetBrains\CLion 2024.1.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=D:/ARM_GCC/ARM_GCC/arm/bin/arm-none-eabi-gcc.exe -DCMAKE_CXX_COMPILER=D:/ARM_GCC/ARM_GCC/arm/bin/arm-none-eabi-g++.exe -G "CodeBlocks - MinGW Makefiles" -S E:\GongCheng\STM32F411CEU6_UserControl -B E:\GongCheng\STM32F411CEU6_UserControl\cmake-build-debug
-CMake Deprecation Warning:
-  Support for "Extra Generators" like
-
-    CodeBlocks
-
-  is deprecated and will be removed from a future version of CMake.  IDEs may
-  use the cmake-file-api(7) to view CMake-generated project build trees.
-
-
+"E:\CLion 2025.2.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=E:/environment/environment/ARM_GCC/ARM_GCC/arm/bin/arm-none-eabi-gcc.exe -DCMAKE_CXX_COMPILER=E:/environment/environment/ARM_GCC/ARM_GCC/arm/bin/arm-none-eabi-g++.exe -G "MinGW Makefiles" -S E:\engineer_ws\STM32F411CEU6_UserControl -B E:\engineer_ws\STM32F411CEU6_UserControl\cmake-build-debug
 -- The C compiler identification is GNU 10.3.1
 -- The CXX compiler identification is GNU 10.3.1
 -- The ASM compiler identification is GNU
--- Found assembler: D:/ENV/env-windows/tools/gnu_gcc/arm_gcc/mingw/bin/arm-none-eabi-gcc.exe
+-- Found assembler: E:/environment/environment/ARM_GCC/ARM_GCC/arm/bin/arm-none-eabi-gcc.exe
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
--- Check for working C compiler: D:/ENV/env-windows/tools/gnu_gcc/arm_gcc/mingw/bin/arm-none-eabi-gcc.exe - skipped
+-- Check for working C compiler: E:/environment/environment/ARM_GCC/ARM_GCC/arm/bin/arm-none-eabi-gcc.exe - skipped
 -- Detecting C compile features
 -- Detecting C compile features - done
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: D:/ENV/env-windows/tools/gnu_gcc/arm_gcc/mingw/bin/arm-none-eabi-g++.exe - skipped
+-- Check for working CXX compiler: E:/environment/environment/ARM_GCC/ARM_GCC/arm/bin/arm-none-eabi-g++.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Minimal optimization, debug info included
--- Configuring done (2.1s)
--- Generating done (0.1s)
--- Build files have been written to: E:/GongCheng/STM32F411CEU6_UserControl/cmake-build-debug
+-- Configuring done (6.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: E:/engineer_ws/STM32F411CEU6_UserControl/cmake-build-debug

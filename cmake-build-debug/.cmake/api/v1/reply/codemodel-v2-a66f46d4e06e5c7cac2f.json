@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "STM32F411CEU6.elf::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-STM32F411CEU6.elf-Debug-1d9b04c03e29f207196d.json",
+					"jsonFile" : "target-STM32F411CEU6.elf-Debug-d604ba291547e0ae5018.json",
 					"name" : "STM32F411CEU6.elf",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "E:/GongCheng/STM32F411CEU6_UserControl/cmake-build-debug",
-		"source" : "E:/GongCheng/STM32F411CEU6_UserControl"
+		"build" : "E:/engineer_ws/STM32F411CEU6_UserControl/cmake-build-debug",
+		"source" : "E:/engineer_ws/STM32F411CEU6_UserControl"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 8
 	}
 }
