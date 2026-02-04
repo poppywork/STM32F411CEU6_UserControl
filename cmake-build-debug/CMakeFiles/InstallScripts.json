@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"E:/engineer_ws/STM32F411CEU6_UserControl/cmake-build-debug/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
