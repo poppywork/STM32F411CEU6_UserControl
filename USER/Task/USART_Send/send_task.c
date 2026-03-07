@@ -71,7 +71,7 @@ void PackData(float *values, uint16_t data_length, RobotArmController_t *tx_data
 
     // 数据区：6个float（每个编码器值4字节）
     // 设置数据段
-    for (int i = 0; i < 7; i++) {
+    for (int i = 0; i < 6; i++) {
         uint8_t *src = (uint8_t *)&values[i];
         uint8_t *dst = &tx_data->data[i * 4];
         memcpy(dst, src, sizeof(float)); // 自动处理4个字节
@@ -154,8 +154,8 @@ void SendTask_Entry(void const * argument)
             // 将打包后的数据写入DMA缓冲区
             memcpy(dma_tx_buffer[current_buffer], &tx_data, FRAME_SIZE);
             // 启动 DMA 发送
-            DMA_Send_Frame();
-           // DMA_Send_Frame2(); // 发送数据帧
+           // DMA_Send_Frame();
+            DMA_Send_Frame2(); // 发送数据帧
 
            // printf("Send Data\n");
         }
@@ -165,7 +165,7 @@ void SendTask_Entry(void const * argument)
 /* -------------------------------- 线程发布Topics信息 ------------------------------- */
 //        chassis_pub_push();
 /* -------------------------------- 线程发布Topics信息 ------------------------------- */
-        vTaskDelay(1);
+        vTaskDelay(33);
     }
 }
 /* -------------------------------- 线程结束 ------------------------------- */
