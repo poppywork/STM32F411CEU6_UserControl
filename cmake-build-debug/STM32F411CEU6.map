@@ -1766,7 +1766,7 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/STM32F411CEU6.elf.dir/USER/Task/USART_Send/send_task.c.obj
  .data          0x00000000        0x0 CMakeFiles/STM32F411CEU6.elf.dir/USER/Task/USART_Send/send_task.c.obj
  .bss           0x00000000        0x0 CMakeFiles/STM32F411CEU6.elf.dir/USER/Task/USART_Send/send_task.c.obj
- .text.DMA_Send_Frame2
+ .text.DMA_Send_Frame
                 0x00000000       0x44 CMakeFiles/STM32F411CEU6.elf.dir/USER/Task/USART_Send/send_task.c.obj
  .data          0x00000000        0x0 d:/env/env-windows/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
  .bss           0x00000000        0x0 d:/env/env-windows/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a(_arm_addsubdf3.o)
@@ -3079,9 +3079,9 @@ LOAD d:/env/env-windows/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi
  .text.PackData
                 0x08008194       0x60 CMakeFiles/STM32F411CEU6.elf.dir/USER/Task/USART_Send/send_task.c.obj
                 0x08008194                PackData
- .text.DMA_Send_Frame
+ .text.DMA_Send_Frame2
                 0x080081f4       0x44 CMakeFiles/STM32F411CEU6.elf.dir/USER/Task/USART_Send/send_task.c.obj
-                0x080081f4                DMA_Send_Frame
+                0x080081f4                DMA_Send_Frame2
  .text.SendTask_Entry
                 0x08008238      0x100 CMakeFiles/STM32F411CEU6.elf.dir/USER/Task/USART_Send/send_task.c.obj
                 0x08008238                SendTask_Entry
@@ -3995,7 +3995,7 @@ LOAD d:/env/env-windows/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi
 LOAD d:/env/env-windows/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libm.a
 LOAD d:/env/env-windows/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard\libgcc.a
 
-.debug_info     0x00000000    0x27d9d
+.debug_info     0x00000000    0x27d9e
  .debug_info    0x00000000      0xae6 CMakeFiles/STM32F411CEU6.elf.dir/Core/Src/adc.c.obj
  .debug_info    0x00000ae6      0x5e4 CMakeFiles/STM32F411CEU6.elf.dir/Core/Src/dma.c.obj
  .debug_info    0x000010ca      0x546 CMakeFiles/STM32F411CEU6.elf.dir/Core/Src/freertos.c.obj
@@ -4038,7 +4038,7 @@ LOAD d:/env/env-windows/tools/gnu_gcc/arm_gcc/mingw/bin/../lib/gcc/arm-none-eabi
  .debug_info    0x000257d5      0x838 CMakeFiles/STM32F411CEU6.elf.dir/USER/Task/Algorithm/algorithm_task.c.obj
  .debug_info    0x0002600d      0x77c CMakeFiles/STM32F411CEU6.elf.dir/USER/Task/Robot_Config/robot.c.obj
  .debug_info    0x00026789      0xbeb CMakeFiles/STM32F411CEU6.elf.dir/USER/Task/USART/usart_task.c.obj
- .debug_info    0x00027374      0xa29 CMakeFiles/STM32F411CEU6.elf.dir/USER/Task/USART_Send/send_task.c.obj
+ .debug_info    0x00027374      0xa2a CMakeFiles/STM32F411CEU6.elf.dir/USER/Task/USART_Send/send_task.c.obj
 
 .debug_abbrev   0x00000000     0x5677
  .debug_abbrev  0x00000000      0x1db CMakeFiles/STM32F411CEU6.elf.dir/Core/Src/adc.c.obj
